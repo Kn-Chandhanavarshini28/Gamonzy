@@ -19,7 +19,7 @@ Gamonzy is an online slot machine game designed as a learning project for TypeSc
 
 **Project Structure**
 
-The project is divided into Backend and Frontend (see images for structure).
+The project is divided into Backend and Frontend.
 
 
 **Backend:**
