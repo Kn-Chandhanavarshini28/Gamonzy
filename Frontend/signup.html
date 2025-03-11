@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casino Login & Sign Up</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+
+<body id="sign-in">
+    <div class="container">
+        <!-- Login Section -->
+        <div class="form-container login-container" id="login-section">
+            <h1>Welcome to Casino</h1>
+            <div class="form-group">
+                <label for="login-username">Username</label>
+                <input type="text" id="login-username" placeholder="Enter your username" required>
+            </div>
+            <div class="form-group">
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" id="LogIn" class="btn">Login</button>
+            <p class="toggle-link">Don’t have an account? <a href="#" id="to-signup">Sign up here</a>.</p>
+        </div>
+
+        <!-- Sign-Up Section -->
+        <div class="form-container signup-container hidden" id="signup-section">
+            <h1>Create Your Account</h1>
+            <div class="form-group">
+                <label for="signup-username">Username</label>
+                <input type="text" id="signup-username" placeholder="Choose a username" required>
+            </div>
+            <div class="form-group">
+                <label for="signup-password">Password</label>
+                <input type="password" id="signup-password" placeholder="Create a password" required>
+            </div>
+            <button type="submit" id="Sign-up" class="btn">Sign Up</button>
+            <p class="toggle-link">Already have an account? <a href="#" id="to-login">Login here</a>.</p>
+        </div>
+    </div>
+    <script src="my-ts-pro/Main.js"></script>
+    <script>
+        // Toggle between Login and Sign-Up forms
+        const loginSection = document.getElementById('login-section');
+        const signupSection = document.getElementById('signup-section');
+        document.getElementById('to-signup').addEventListener('click', () => {
+            loginSection.classList.add('hidden');
+            signupSection.classList.remove('hidden');
+        });
+        document.getElementById('to-login').addEventListener('click', () => {
+            signupSection.classList.add('hidden');
+            loginSection.classList.remove('hidden');
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+{
+  "name": "my-ts-pro",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "index": "ts-node ./my-ts-pro/src/index.ts",
+    "bundle": "node my-ts-pro/build.js",
+    "unit-test": "ts-node ./my-ts-pro/unit-test.ts",
+    "zip": "cd ./my-ts-pro/dist && zip -r handler.zip handler.js",
+    "deploy": "aws lambda update-function-code --function-name Gamonzy --zip-file fileb://./my-ts-pro/dist/handler.zip "
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.7",
+    "@types/node": "^16.18.98",
+    "@types/readline-sync": "^1.4.8",
+    "@types/request": "^2.48.12",
+    "axios": "^1.7.2",
+    "esbuild": "^0.14.54",
+    "inquirer": "^7.3.3",
+    "request": "^2.88.2",
+    "typescript": "^4.5.0"
+  },
+  "dependencies": {
+    "readline-sync": "^1.4.10",
+    "ts-node": "^10.9.2"
+  }
+}

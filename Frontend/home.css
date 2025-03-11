@@ -1,0 +1,163 @@
+/* General Styles */
+body {
+   font-family: 'Arial', sans-serif;
+   margin: 0;
+   padding: 0;
+   background: linear-gradient(to right, #243B55, #141E30);
+   color: #fff;
+}
+
+/* Navbar */
+.navbar {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1rem;
+   background-color: #1E2746;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.navbar h1 {
+   margin: 0;
+   font-size: 1.5rem;
+}
+
+.profile-dropdown {
+   position: relative;
+}
+
+.profile-btn {
+   background: #00ff99;
+   border: none;
+   padding: 0.5rem 1rem;
+   border-radius: 5px;
+   cursor: pointer;
+   color: #000;
+   font-weight: bold;
+}
+
+.profile-btn:hover {
+   background: #00cc7a;
+}
+
+.dropdown-menu {
+   position: absolute;
+   top: 100%;
+   right: 0;
+   background: #243B55;
+   border-radius: 5px;
+   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+   display: none;
+   flex-direction: column;
+}
+
+.dropdown-menu a {
+   color: #fff;
+   padding: 0.5rem 1rem;
+   text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+   background: #00ff99;
+   color: #000;
+}
+
+.hidden {
+   display: none !important;
+}
+
+/* Betting Section */
+.betting-section {
+   text-align: center;
+   margin: 2rem;
+}
+
+.betting-section h2 {
+   margin-bottom: 1rem;
+   font-size: 1.5rem;
+}
+
+.form-group {
+   margin-bottom: 1rem;
+}
+
+input {
+   width: 60%;
+   padding: 0.5rem;
+   border: none;
+   border-radius: 5px;
+   background: #1E2746;
+   color: #fff;
+}
+
+.btn {
+   padding: 0.5rem 1rem;
+   background: #00ff99;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   color: #000;
+   font-weight: bold;
+}
+
+.btn:hover {
+   background: #00cc7a;
+}
+
+/* Results Grid */
+.grid {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 10px;
+   margin-top: 2rem;
+}
+
+.grid-box {
+   width: 100px;
+   height: 100px;
+   background: #243B55;
+   color: #00ff99;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 1.5rem;
+   border-radius: 5px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+button{
+   background: #00ff99;
+   border: none;
+   padding: 0.5rem 1rem;
+   border-radius: 5px;
+   cursor: pointer;
+   color: #000;
+   font-weight: bold;
+}
+.slot-row {
+   display: flex;
+   justify-content: center;
+   margin: 10px 0;
+   padding: 5px;
+   border: solid 2px #00ff99;
+   border-radius: 3px;
+   width: fit-content;
+}
+
+.slot-cell {
+   width: 50px;
+   height: 50px;
+   border: 2px solid #00ff99;
+   border-radius: 5px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 24px;
+   margin: 0 5px;
+   background-color: #006b80;
+}
+#slot {
+   display: flex;            
+   justify-content: center;  
+   align-items: center;
+   flex-direction: column;      
+}
